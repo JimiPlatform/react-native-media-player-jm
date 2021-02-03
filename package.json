@@ -1,0 +1,37 @@
+{
+  "name": "react-native-media-player-jm,
+  "version": "1.0.0-bate1",
+  "description": "Jimi Video Player for Media SDK modules and view for React Native(Android & IOS), support react native 0.57+. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JimiPlatform/react-native-media-player-jm.git"
+  },
+  "keywords": [
+    "Video Player",
+    "Media Player",
+    "Player",
+    "React Native",
+    "react-native-media-player-jm"
+  ],
+  "author": "Jason",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JimiPlatform/react-native-media-player-jm/issues"
+  },
+  "homepage": "https://github.com/JimiPlatform/react-native-media-player-jm#readme",
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {
+      "react": "16.6.3",
+      "react-native": "0.58.6"
+  },
+  "devDependencies": {
+      "react": "16.6.3",
+      "react-native": "0.58.6"
+  }
+}

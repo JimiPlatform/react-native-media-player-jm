@@ -1,0 +1,401 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C0CA93825C95EE100EDCB64 /* RNJMMediaConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0CA93125C95EE100EDCB64 /* RNJMMediaConstant.m */; };
+		0C0CA93A25C95EE100EDCB64 /* RNJMMediaPlayerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C0CA93325C95EE100EDCB64 /* RNJMMediaPlayerManager.h */; };
+		0C0CA93B25C95EE100EDCB64 /* RNJMMediaConstant.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C0CA93425C95EE100EDCB64 /* RNJMMediaConstant.h */; };
+		0C0CA93C25C95EE100EDCB64 /* RNJMMonitorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0CA93525C95EE100EDCB64 /* RNJMMonitorManager.m */; };
+		0C0CA93D25C95EE100EDCB64 /* RNJMMonitorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C0CA93625C95EE100EDCB64 /* RNJMMonitorManager.h */; };
+		0C0CA93E25C95EE100EDCB64 /* RNJMMediaPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0CA93725C95EE100EDCB64 /* RNJMMediaPlayerManager.m */; };
+		711FC1DF54C7E5B8F6467055 /* libPods-RNJMMediaPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC7F25286FAB9CF73C93F42C /* libPods-RNJMMediaPlayer.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C0CA91625C95EA500EDCB64 /* RNJMMediaPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RNJMMediaPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C0CA91A25C95EA500EDCB64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C0CA93125C95EE100EDCB64 /* RNJMMediaConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNJMMediaConstant.m; sourceTree = "<group>"; };
+		0C0CA93325C95EE100EDCB64 /* RNJMMediaPlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNJMMediaPlayerManager.h; sourceTree = "<group>"; };
+		0C0CA93425C95EE100EDCB64 /* RNJMMediaConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNJMMediaConstant.h; sourceTree = "<group>"; };
+		0C0CA93525C95EE100EDCB64 /* RNJMMonitorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNJMMonitorManager.m; sourceTree = "<group>"; };
+		0C0CA93625C95EE100EDCB64 /* RNJMMonitorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNJMMonitorManager.h; sourceTree = "<group>"; };
+		0C0CA93725C95EE100EDCB64 /* RNJMMediaPlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNJMMediaPlayerManager.m; sourceTree = "<group>"; };
+		BEE7F34671A442DA7518C07F /* Pods-RNJMMediaPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNJMMediaPlayer.debug.xcconfig"; path = "Target Support Files/Pods-RNJMMediaPlayer/Pods-RNJMMediaPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		F7ECEAF9FCAE553FECAE446E /* Pods-RNJMMediaPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNJMMediaPlayer.release.xcconfig"; path = "Target Support Files/Pods-RNJMMediaPlayer/Pods-RNJMMediaPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		FC7F25286FAB9CF73C93F42C /* libPods-RNJMMediaPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNJMMediaPlayer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C0CA91325C95EA500EDCB64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				711FC1DF54C7E5B8F6467055 /* libPods-RNJMMediaPlayer.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C0CA90C25C95EA500EDCB64 = {
+			isa = PBXGroup;
+			children = (
+				0C0CA91825C95EA500EDCB64 /* RNJMMediaPlayer */,
+				0C0CA91725C95EA500EDCB64 /* Products */,
+				62E02B522394A5FFD44EC492 /* Pods */,
+				C6A6365C4A617D82F5B77947 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0C0CA91725C95EA500EDCB64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C0CA91625C95EA500EDCB64 /* RNJMMediaPlayer.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C0CA91825C95EA500EDCB64 /* RNJMMediaPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				0C0CA93625C95EE100EDCB64 /* RNJMMonitorManager.h */,
+				0C0CA93525C95EE100EDCB64 /* RNJMMonitorManager.m */,
+				0C0CA93325C95EE100EDCB64 /* RNJMMediaPlayerManager.h */,
+				0C0CA93725C95EE100EDCB64 /* RNJMMediaPlayerManager.m */,
+				0C0CA93425C95EE100EDCB64 /* RNJMMediaConstant.h */,
+				0C0CA93125C95EE100EDCB64 /* RNJMMediaConstant.m */,
+				0C0CA91A25C95EA500EDCB64 /* Info.plist */,
+			);
+			path = RNJMMediaPlayer;
+			sourceTree = "<group>";
+		};
+		62E02B522394A5FFD44EC492 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BEE7F34671A442DA7518C07F /* Pods-RNJMMediaPlayer.debug.xcconfig */,
+				F7ECEAF9FCAE553FECAE446E /* Pods-RNJMMediaPlayer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C6A6365C4A617D82F5B77947 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC7F25286FAB9CF73C93F42C /* libPods-RNJMMediaPlayer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0C0CA91125C95EA500EDCB64 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C0CA93D25C95EE100EDCB64 /* RNJMMonitorManager.h in Headers */,
+				0C0CA93A25C95EE100EDCB64 /* RNJMMediaPlayerManager.h in Headers */,
+				0C0CA93B25C95EE100EDCB64 /* RNJMMediaConstant.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0C0CA91525C95EA500EDCB64 /* RNJMMediaPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C0CA91E25C95EA500EDCB64 /* Build configuration list for PBXNativeTarget "RNJMMediaPlayer" */;
+			buildPhases = (
+				7D719E185AF1A7FF5685E07D /* [CP] Check Pods Manifest.lock */,
+				0C0CA91125C95EA500EDCB64 /* Headers */,
+				0C0CA91225C95EA500EDCB64 /* Sources */,
+				0C0CA91325C95EA500EDCB64 /* Frameworks */,
+				0C0CA91425C95EA500EDCB64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RNJMMediaPlayer;
+			productName = RNJMMediaPlayer;
+			productReference = 0C0CA91625C95EA500EDCB64 /* RNJMMediaPlayer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C0CA90D25C95EA500EDCB64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					0C0CA91525C95EA500EDCB64 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 0C0CA91025C95EA500EDCB64 /* Build configuration list for PBXProject "RNJMMediaPlayer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0C0CA90C25C95EA500EDCB64;
+			productRefGroup = 0C0CA91725C95EA500EDCB64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C0CA91525C95EA500EDCB64 /* RNJMMediaPlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C0CA91425C95EA500EDCB64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D719E185AF1A7FF5685E07D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RNJMMediaPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C0CA91225C95EA500EDCB64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C0CA93825C95EE100EDCB64 /* RNJMMediaConstant.m in Sources */,
+				0C0CA93E25C95EE100EDCB64 /* RNJMMediaPlayerManager.m in Sources */,
+				0C0CA93C25C95EE100EDCB64 /* RNJMMonitorManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0C0CA91C25C95EA500EDCB64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0C0CA91D25C95EA500EDCB64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0C0CA91F25C95EA500EDCB64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEE7F34671A442DA7518C07F /* Pods-RNJMMediaPlayer.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = EB9K2L27BQ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RNJMMediaPlayer/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimi.RNJMMediaPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0C0CA92025C95EA500EDCB64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7ECEAF9FCAE553FECAE446E /* Pods-RNJMMediaPlayer.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = EB9K2L27BQ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RNJMMediaPlayer/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimi.RNJMMediaPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C0CA91025C95EA500EDCB64 /* Build configuration list for PBXProject "RNJMMediaPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C0CA91C25C95EA500EDCB64 /* Debug */,
+				0C0CA91D25C95EA500EDCB64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C0CA91E25C95EA500EDCB64 /* Build configuration list for PBXNativeTarget "RNJMMediaPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C0CA91F25C95EA500EDCB64 /* Debug */,
+				0C0CA92025C95EA500EDCB64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0C0CA90D25C95EA500EDCB64 /* Project object */;
+}

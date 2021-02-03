@@ -1,0 +1,23 @@
+platform :ios, '9.0'
+
+target 'RNJMMediaPlayer' do
+  # use_frameworks!
+  
+  pod 'JMSmartMediaPlayer'
+
+  pod 'React', :path => '../example/node_modules/react-native', :subspecs => [
+    'Core',
+    'CxxBridge',
+    'DevSupport',
+    'RCTText',
+    'RCTNetwork',
+    'RCTWebSocket',
+    'RCTAnimation',
+    'RCTImage',
+  ]
+  pod 'yoga', :path => '../example/node_modules/react-native/ReactCommon/yoga'
+  pod 'DoubleConversion', :podspec => '../example/node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+  pod 'glog', :podspec => '../example/node_modules/react-native/third-party-podspecs/glog.podspec'
+  pod 'Folly', :podspec => '../example/node_modules/react-native/third-party-podspecs/Folly.podspec'
+  
+end
