@@ -37,8 +37,16 @@
 			</dict>
 		</dict>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Use Camera</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string></string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Use Microphone</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Use Photo Library</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Use Photo Library</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>location</string>
@@ -49,8 +57,6 @@
 	<array>
 		<string>armv7</string>
 	</array>
-	<key>NSCameraUsageDescription</key>
-	<string>Use Camera</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
@@ -59,11 +65,5 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>Use Microphone</string>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>Use Photo Library</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Use Photo Library</string>
 </dict>
 </plist>

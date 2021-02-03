@@ -29,7 +29,7 @@ NSString *const kOnMediaPlayerReceiveFrameInfo = @"kOnMediaPlayerReceiveFrameInf
                                     @"playStatusPrepare": @(JM_MEDIA_PLAY_STATUS_PREPARE),
                                     @"playStatusStart": @(JM_MEDIA_PLAY_STATUS_START),
                                     @"playStatusStop": @(JM_MEDIA_PLAY_STATUS_STOP),
-                                    @"playStatusErrURLGet": @(JM_MEDIA_PLAY_STATUS_FAILED)
+                                    @"playStatusFailed": @(JM_MEDIA_PLAY_STATUS_FAILED)
     }];
     
     [dic addEntriesFromDictionary:@{@"talkStatusNone": @(JM_MEDIA_TALK_STATUS_NONE),
@@ -42,8 +42,8 @@ NSString *const kOnMediaPlayerReceiveFrameInfo = @"kOnMediaPlayerReceiveFrameInf
     [dic addEntriesFromDictionary:@{@"recordStatusNone": @(JM_MEDIA_RECORD_STATUS_NONE),
                                     @"recordStatusStart": @(JM_MEDIA_RECORD_STATUS_START),
                                     @"recordStatusComplete": @(JM_MEDIA_RECORD_STATUS_COMPLETE),
-                                    @"recordStatusErrRecording": @(JM_MEDIA_RECORD_STATUS_FAILED),
-                                    @"recordStatusErrFail": @(JM_MEDIA_RECORD_STATUS_RECORDING)
+                                    @"recordStatusFailed": @(JM_MEDIA_RECORD_STATUS_FAILED),
+                                    @"recordStatusErrRecording": @(JM_MEDIA_RECORD_STATUS_RECORDING)
     }];
     
     [dic addEntriesFromDictionary:@{@"errorCodeNoErr": @(JM_MEDIA_ERR_NO_ERR),

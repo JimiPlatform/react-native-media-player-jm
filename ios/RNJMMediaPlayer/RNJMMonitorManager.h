@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 extern JMMonitor *gRNJMMonitor;
 
-@interface RNJMMonitorManager : NSObject
+@interface RNJMMonitorManager : RCTViewManager
 
 @end
 

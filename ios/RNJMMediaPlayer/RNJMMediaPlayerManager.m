@@ -65,6 +65,10 @@ RCT_EXPORT_METHOD(initialize) {
     
     gJMMediaNetworkPlayer = [[JMMediaNetworkPlayer alloc] init];
     gJMMediaNetworkPlayer.delegate = self;
+    gJMMediaNetworkPlayer.sniffStreamEnable = YES;
+    if (gRNJMMonitor) {
+        [gJMMediaNetworkPlayer attachMonitor:gRNJMMonitor];
+    }
 }
 
 RCT_EXPORT_METHOD(deInitialize) {
@@ -78,9 +82,6 @@ RCT_EXPORT_METHOD(deInitialize) {
 
 RCT_EXPORT_METHOD(play:(NSString *)url resolve:(RCTPromiseResolveBlock)resolve reject:(RCTPromiseRejectBlock)reject) {
     if ([self isNoInitReject:reject]) { return; }
-    if (gRNJMMonitor) {
-        [gJMMediaNetworkPlayer attachMonitor:gRNJMMonitor];
-    }
 
     [gJMMediaNetworkPlayer play:url];
     resolve(@"");
@@ -132,8 +133,8 @@ RCT_EXPORT_METHOD(isRecording:(RCTPromiseResolveBlock)resolve reject:(RCTPromise
 RCT_EXPORT_METHOD(getRecordingDuration:(RCTPromiseResolveBlock)resolve reject:(RCTPromiseRejectBlock)reject) {
     if ([self isNoInitReject:reject]) { return; }
 
-//    long time = [gJMMediaNetworkPlayer getRecordingRuration];
-//    resolve(@(time));
+//    long duration = [gJMMediaNetworkPlayer getRecordingDuration];
+//    resolve(@(duration));
 }
 
 RCT_EXPORT_METHOD(snapshot:(NSString *)filePath resolve:(RCTPromiseResolveBlock)resolve reject:(RCTPromiseRejectBlock)reject) {

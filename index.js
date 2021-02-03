@@ -1,4 +1,4 @@
-import _JMRTMPMonitorView from './js/JMRTMPMonitorView';
+import _JMMeidaMonitor from './js/JMMeidaMonitor';
 
-export const JMRTMPMonitorView = _JMRTMPMonitorView;
+export const JMMeidaMonitor = _JMMeidaMonitor;
 

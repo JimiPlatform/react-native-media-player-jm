@@ -337,6 +337,7 @@
 		09052F3366280CF621C54C84 /* Pods-exampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-exampleTests/Pods-exampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		0C16953C2314C52A00085C6D /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		0C3F61492317805A0068D551 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0C938AF725CA6ED100A31487 /* App.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = App.js; path = ../App.js; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -506,6 +507,7 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				0C938AF725CA6ED100A31487 /* App.js */,
 			);
 			name = example;
 			sourceTree = "<group>";
@@ -662,7 +664,6 @@
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				0C16953B2314C50500085C6D /* Embed Frameworks */,
-				104D1E74A8AF6CB98C6CE126 /* [CP] Embed Pods Frameworks */,
 				0CEF02DE233C49EB00F5C4EA /* ShellScript */,
 			);
 			buildRules = (
@@ -1132,24 +1133,6 @@
 			shellPath = /bin/sh;
 			shellScript = "#REACT_NATIVE_DIR=${SRCROOT}/../node_modules/react-native\nREACT_NATIVE_DIR=/Users/lzj/Desktop/Project/react-native-rtmp-player-jm/example/node_modules/react-native\nPATCH_FILE_PATH=${SRCROOT}/react-native-patch\necho \"REACT_NATIVE_DIR:$REACT_NATIVE_DIR\"\necho \"PATCH_FILE_PATH:$PATCH_FILE_PATH\"\n\nset -x\npatch  -p0 -N --dry-run --silent -f $REACT_NATIVE_DIR/React/Base/RCTModuleMethod.mm < $PATCH_FILE_PATH/rn_modify_module_method.patch 1>/dev/null\nif [ $? -eq 0 ]; then\npatch -p0 -f $REACT_NATIVE_DIR/React/Base/RCTModuleMethod.mm < $PATCH_FILE_PATH/rn_modify_module_method.patch\nfi\n";
 		};
-		104D1E74A8AF6CB98C6CE126 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-example/Pods-example-frameworks.sh",
-				"${PODS_ROOT}/JimiVideoPlayer/JimiVideoPlayer.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JimiVideoPlayer.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-example/Pods-example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1264,6 +1247,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1278,7 +1262,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jimi.baidutest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimi.rnexample;
 				PRODUCT_NAME = example;
 				PROVISIONING_PROFILE_SPECIFIER = "JM PublicDevelopment";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1297,6 +1281,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1311,7 +1296,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jimi.baidutest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimi.rnexample;
 				PRODUCT_NAME = example;
 				PROVISIONING_PROFILE_SPECIFIER = "JM PublicDistribution";
 				VERSIONING_SYSTEM = "apple-generic";

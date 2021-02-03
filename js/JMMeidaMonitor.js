@@ -8,7 +8,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import resolveAssetSource from 'react-native/Libraries/Image/resolveAssetSource';
 
-export default class RNJMRTMPMonitorView extends Component {
+export default class RNJMMeidaMonitor extends Component {
   static propTypes = {
     ...View.propTypes,
     image: PropTypes.number
@@ -26,13 +26,13 @@ export default class RNJMRTMPMonitorView extends Component {
       image = resolveAssetSource(this.props.image) || {};
     }
     
-    return <JMRTMPMonitorView {...this.props} onChange={this._onChange.bind(this)}
+    return <JMMeidaMonitor {...this.props} onChange={this._onChange.bind(this)}
       style={Platform.OS === 'ios' ? {backgroundColor:'black',...this.props.style} : {...this.props.style, backgroundColor:'#FF000000'}}
       image={image} />;
   }
 }
 
-const JMRTMPMonitorView = requireNativeComponent('JMRTMPMonitor', RNJMRTMPMonitorView, {
+const JMMeidaMonitor = requireNativeComponent('JMMonitor', RNJMMeidaMonitor, {
   nativeOnly: {onChange: true}
 });
 
