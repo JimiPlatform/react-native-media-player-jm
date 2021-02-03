@@ -133,8 +133,8 @@ RCT_EXPORT_METHOD(isRecording:(RCTPromiseResolveBlock)resolve reject:(RCTPromise
 RCT_EXPORT_METHOD(getRecordingDuration:(RCTPromiseResolveBlock)resolve reject:(RCTPromiseRejectBlock)reject) {
     if ([self isNoInitReject:reject]) { return; }
 
-//    long duration = [gJMMediaNetworkPlayer getRecordingDuration];
-//    resolve(@(duration));
+    long duration = [gJMMediaNetworkPlayer getRecordingDuration];
+    resolve(@(duration));
 }
 
 RCT_EXPORT_METHOD(snapshot:(NSString *)filePath resolve:(RCTPromiseResolveBlock)resolve reject:(RCTPromiseRejectBlock)reject) {
