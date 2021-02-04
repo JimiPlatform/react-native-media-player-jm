@@ -40,7 +40,7 @@ or
 
 - Way1
   
-- `react-native link react-native-media-player-jm`
+  `react-native link react-native-media-player-jm`
   
 - Way2
 
