@@ -1,6 +1,6 @@
 {
   "name": "react-native-media-player-jm",
-  "version": "1.0.0-bate1",
+  "version": "1.0.0",
   "description": "Jimi Video Player for Media SDK modules and view for React Native(Android & IOS), support react native 0.57+. ",
   "main": "index.js",
   "scripts": {
