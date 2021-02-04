@@ -16,5 +16,6 @@ Pod::Spec.new do |s|
   s.libraries = "c++"
 
   s.dependency 'React'
-  s.dependency 'JMSmartMediaPlayer', '1.1.6-beta1'
+  s.dependency 'JMSmartMediaPlayer', '1.1.6'
+  
 end

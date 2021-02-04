@@ -22,8 +22,9 @@ target 'example' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
+  pod 'JMMonitorView'
 
-  pod 'react-native-media-player-jm',  :path =>'../../react-native-media-player-jm.podspec'
+#  pod 'react-native-media-player-jm',  :path =>'../../react-native-media-player-jm.podspec'
   #pod 'react-native-media-player-jm', :podspec => '../node_modules/react-native-media-player-jm/react-native-media-player-jm.podspec'
 
   pod 'RNFS', :podspec => '../node_modules/react-native-fs'

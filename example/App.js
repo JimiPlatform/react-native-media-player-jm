@@ -10,9 +10,9 @@ const {
 export default class App extends Component<Props> {
     state = {
         managerListener: new NativeEventEmitter(JMMediaPlayer),
-        playStatusSubscription: null,
-        recordStatusSubscription: null,
-        frameInfoSubscription: null,
+        playStatusSubscription: null,       // Play Status Listener
+        recordStatusSubscription: null,     // Record Status Listener
+        frameInfoSubscription: null,        // Video Frame Info Listener, 1s update
         mute: false
     };
 
@@ -33,7 +33,7 @@ export default class App extends Component<Props> {
             console.log(reminder);
         });
         frameInfoSubscription = this.state.managerListener.addListener(JMMediaPlayer.kOnMediaPlayerReceiveFrameInfo, (reminder) => {
-//            console.log(reminder);
+            console.log(reminder);
         });
     }
 
@@ -98,7 +98,15 @@ export default class App extends Component<Props> {
     }
 
     clickedStartPlay() {
-        JMMediaPlayer.play("rtmp://58.200.131.2:1935/livetv/channelv").then(data => {
+        // TV RTMP Video Stream URL
+//        JMMediaPlayer.play("rtmp://58.200.131.2:1935/livetv/channelv").then(data => {
+//            console.log(data);
+//        }).catch(e => {
+//            console.log(e);
+//        });
+        
+        // SENT01 Device RTSP Video Stream URL
+        JMMediaPlayer.play("rtsp://192.168.43.1:8080?camera=front").then(data => {
             console.log(data);
         }).catch(e => {
             console.log(e);
