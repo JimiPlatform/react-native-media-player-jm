@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "9.0"
   s.requires_arc = true
 
-  s.source       = { :git => "https://github.com/JimiPlatform/react-native-media-player-jm.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/JimiPlatform/react-native-media-player-jm.git", :tag => "v#{s.version}" }
 
   s.source_files  = "ios/RNJMMediaPlayer/**/*.{h,m}"
   s.libraries = "c++"
