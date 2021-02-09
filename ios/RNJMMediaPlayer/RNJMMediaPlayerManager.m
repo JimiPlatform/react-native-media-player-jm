@@ -191,6 +191,12 @@ RCT_EXPORT_METHOD(getMute:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRe
     resolve(@(gJMMediaNetworkPlayer.mute));
 }
 
+RCT_EXPORT_METHOD(setDelayMaxTime:(CGFloat)delayMaxTime resolve:(RCTPromiseResolveBlock)resolve reject:(RCTPromiseRejectBlock)reject) {
+    if ([self isNoInitReject:reject]) { return; }
+    [gJMMediaNetworkPlayer setDelayMaxTime:delayMaxTime];
+    resolve(@"");
+}
+
 #pragma mark - JMVideoStreamPlayerDelegate
 
 - (NSMutableDictionary *)getEmptyBody {

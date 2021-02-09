@@ -89,20 +89,21 @@ const {
 
 > This is media player API manager. 
 
-| Method                   | Result Type | Result Content                                        | Description                                              |
-| ------------------------ | ----------- | ----------------------------------------------------- | -------------------------------------------------------- |
-| initialize               | null        | null                                                  | SDK initialize                                           |
-| deInitialize             | null        | null                                                  | SDK deinitialize                                         |
-| play(String url)         | Promise     | Success：""，Fail：see ErrCode Table                  | Play RTSP or RTMP video stream                           |
-| stop                     | Promise     | Success：""，Fail：see ErrCode Table                  | Stop video stream                                        |
-| isPlaying                | Promise     | Success：true or false，Fail：see ErrCode Table       | Is the video playing？                                   |
-| startRecord(String path) | Promise     | Success：""，Fail：see ErrCode Table                  | start record video stream，PS：Video needs to be playing |
-| stopRecord               | Promise     | Success：""，Fail：see ErrCode Table                  | stop record video stream                                 |
-| isRecording              | Promise     | Success：true or false，Fail：see ErrCode Table       | Is recording a video？                                   |
-| getRecordingDuration     | Promise     | Success：Int，Fail：see ErrCode Table                 | recording duration                                       |
-| snapshot(String path)    | Promise     | Success：local img file path，Fail：see ErrCode Table | video snapshot                                           |
-| setMute                  | Promise     | Success：""，Fail：see ErrCode Table                  | set video mute                                           |
-| getMute                  | Promise     | Success：true or false，Fail：see ErrCode Table       | get video mute status                                    |
+| Method                      | Result Type | Result Content                                        | Description                                                  |
+| --------------------------- | ----------- | ----------------------------------------------------- | ------------------------------------------------------------ |
+| initialize                  | null        | null                                                  | SDK initialize                                               |
+| deInitialize                | null        | null                                                  | SDK deinitialize                                             |
+| play(String url)            | Promise     | Success：""，Fail：see ErrCode Table                  | Play RTSP or RTMP video stream                               |
+| stop                        | Promise     | Success：""，Fail：see ErrCode Table                  | Stop video stream                                            |
+| isPlaying                   | Promise     | Success：true or false，Fail：see ErrCode Table       | Is the video playing？                                       |
+| startRecord(String path)    | Promise     | Success：""，Fail：see ErrCode Table                  | start record video stream，PS：Video needs to be playing     |
+| stopRecord                  | Promise     | Success：""，Fail：see ErrCode Table                  | stop record video stream                                     |
+| isRecording                 | Promise     | Success：true or false，Fail：see ErrCode Table       | Is recording a video？                                       |
+| getRecordingDuration        | Promise     | Success：Int，Fail：see ErrCode Table                 | recording duration                                           |
+| snapshot(String path)       | Promise     | Success：local img file path，Fail：see ErrCode Table | video snapshot                                               |
+| setMute(Bool mute)          | Promise     | Success：""，Fail：see ErrCode Table                  | set video mute                                               |
+| getMute                     | Promise     | Success：true or false，Fail：see ErrCode Table       | get video mute status                                        |
+| setDelayMaxTime(Float time) | Promise     | Success：""，Fail：see ErrCode Table                  | Set the maximum time of pre-caching queue, at least 10 seconds. |
 
 ### JMMediaPlayer Listener
 

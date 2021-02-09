@@ -91,6 +91,7 @@ export default class App extends Component<Props> {
 
     clickedInitSDK() {
         JMMediaPlayer.initialize()
+        JMMediaPlayer.setDelayMaxTime(2.0)  //set cache time
     }
 
     clickedReleaseSDK() {
@@ -98,19 +99,19 @@ export default class App extends Component<Props> {
     }
 
     clickedStartPlay() {
-//        // TV RTMP Video Stream URL
-//        JMMediaPlayer.play("rtmp://58.200.131.2:1935/livetv/channelv").then(data => {
-//            console.log(data);
-//        }).catch(e => {
-//            console.log(e);
-//        });
-        
-        // SENT01 Device RTSP Video Stream URL
-        JMMediaPlayer.play("rtsp://192.168.43.1:8080?camera=front").then(data => {
+        // TV RTMP Video Stream URL
+        JMMediaPlayer.play("rtmp://58.200.131.2:1935/livetv/channelv").then(data => {
             console.log(data);
         }).catch(e => {
             console.log(e);
         });
+        
+//        // SENT01 Device RTSP Video Stream URL
+//        JMMediaPlayer.play("rtsp://192.168.43.1:8080?camera=front").then(data => {
+//            console.log(data);
+//        }).catch(e => {
+//            console.log(e);
+//        });
     }
 
     clickedStopPlay() {
