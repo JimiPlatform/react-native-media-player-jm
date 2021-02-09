@@ -3,7 +3,7 @@ platform :ios, '9.0'
 target 'RNJMMediaPlayer' do
   # use_frameworks!
   
-  pod 'JMSmartMediaPlayer'
+  pod 'JMSmartMediaPlayer', '1.1.7-beta1'
 
   pod 'React', :path => '../example/node_modules/react-native', :subspecs => [
     'Core',

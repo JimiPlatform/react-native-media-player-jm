@@ -18,3 +18,5 @@ Podfile.lock
 */Pods/
 *.xcodeproj
 *.xcworkspace
+Podfile
+*.plist
