@@ -103,7 +103,7 @@ const {
 | snapshot(String path)       | Promise     | Success：local img file path，Fail：see ErrCode Table | video snapshot                                               |
 | setMute(Bool mute)          | Promise     | Success：""，Fail：see ErrCode Table                  | set video mute                                               |
 | getMute                     | Promise     | Success：true or false，Fail：see ErrCode Table       | get video mute status                                        |
-| setDelayMaxTime(Float time) | Promise     | Success：""，Fail：see ErrCode Table                  | Set the maximum time of pre-caching queue, at least 10 seconds. |
+| setDelayMaxTime(Float time) | Promise     | Success：""，Fail：see ErrCode Table                  | Set the maximum time of pre-caching queue, default is 10s and range is 0~30s. |
 
 ### JMMediaPlayer Listener
 
